@@ -1,18 +1,17 @@
-# Config New Linux
+#! /bin/bash
 
-## Basic Stuff
+#
+# After this script, manually:
+# Run vim and do :PlugInstall .
+# Download conda and install.
+# 
 
-```bash
 
+#update
 sudo apt-get update
 sudo apt-get upgrade
 
-```
-
-## ZSH && Oh-my-ZSH
-
-```bash
-
+#zsh
 sudo apt-get -y zsh
 chsh -s $(which zsh)
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
@@ -22,22 +21,10 @@ rm .zshrc
 cp wsl/.zshrc .zshrc
 source ~/.zshrc
 
-```
+#python
+##use conda
 
-## python
-
-Download conda from `https://www.anaconda.com/products/individual`
-Install by `bash *****.sh`
-
-```bash
-conda update
-conda init
-
-```
-
-## Vim
-
-```bash
+#vim
 sudo apt-get install neovim
 sudo apt-get install nodejs
 sudo apt-get install yum
@@ -48,25 +35,12 @@ mkdir .config/nvim
 cp ~/wsl/init.vim ~/.config/nvim/inti.vim
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-vim
-```
-execuse `:PlugInstall` in vim
 
-## git
-
-```bash
+#git
 ssh-keygen -t rsa -b 4096 -C "diegodaddy@icloud.com"
 cat ~/.ssh/id_rsa.pub
-```
-Set ssh in github, and 
-
-```bash
 git config --global user.name "diego"
 git config --global user.email "diegodaddy@icloud.com"
-```
 
-##GUI
-Install XLaunch in Windows.
-```bash
+#GUI
 sudo apt-get install xfce4
-```
