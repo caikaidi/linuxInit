@@ -63,6 +63,7 @@ Set ssh in github, and
 ```bash
 git config --global user.name "diego"
 git config --global user.email "diegodaddy@icloud.com"
+git config --global core.editor vim
 ```
 
 ##GUI

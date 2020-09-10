@@ -4,7 +4,8 @@
 # After this script, manually:
 # Run vim and do :PlugInstall .
 # Download conda and install.
-# 
+# Paste ~/.ssh/id_rsa.pub to github ssh config
+
 
 
 #update
@@ -41,6 +42,7 @@ ssh-keygen -t rsa -b 4096 -C "diegodaddy@icloud.com"
 cat ~/.ssh/id_rsa.pub
 git config --global user.name "diego"
 git config --global user.email "diegodaddy@icloud.com"
+git config --global core.editor vim
 
 #GUI
-sudo apt-get install xfce4
+#sudo apt-get install xfce4
