@@ -9,11 +9,11 @@
 
 
 #update
-sudo apt-get update
-sudo apt-get upgrade
+sudo apt update
+sudo apt upgrade
 
 #zsh
-sudo apt-get -y zsh
+sudo apt -y zsh
 chsh -s $(which zsh)
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
 cd ~
@@ -26,14 +26,14 @@ source ~/.zshrc
 ##use conda
 
 #vim
-sudo apt-get install neovim
-sudo apt-get install nodejs
-sudo apt-get install yum
+sudo apt install neovim
+sudo apt install nodejs
+#sudo apt install yum
 cd ~
 mkdir .vim
 cp ~/wsl/vimrc ~/.vim/vimrc
 mkdir .config/nvim
-cp ~/wsl/init.vim ~/.config/nvim/inti.vim
+cp ~/wsl/init.vim ~/.config/nvim/init.vim
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
@@ -45,4 +45,4 @@ git config --global user.email "diegodaddy@icloud.com"
 git config --global core.editor vim
 
 #GUI
-#sudo apt-get install xfce4
+#sudo apt install xfce4
